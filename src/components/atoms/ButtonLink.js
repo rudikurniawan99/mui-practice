@@ -13,7 +13,8 @@ const ButtonLink = ({ type, name, path, icon }) => {
         endIcon={icon}
         sx={{
           borderRadius: '20px',
-          textTransform: 'none'
+          textTransform: 'none',
+          paddingX: 3 
         }}
       >{name}</Button>
     </Box>
