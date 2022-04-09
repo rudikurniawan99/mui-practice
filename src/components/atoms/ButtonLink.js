@@ -14,7 +14,8 @@ const ButtonLink = ({ type, name, path, icon }) => {
         sx={{
           borderRadius: '20px',
           textTransform: 'none',
-          paddingX: 3 
+          paddingX: 3,
+          fontWeight: 600 
         }}
       >{name}</Button>
     </Box>
