@@ -2,7 +2,8 @@ import React from 'react'
 import { Button, Box } from '@mui/material'
 import { Link } from 'react-router-dom'
 
-const ButtonLink = ({ type, name, path, icon }) => {
+const ButtonLink = ({ type, name, path, icon, addSx }) => {
+
   return (
     <Box
       component={Link} 
@@ -14,8 +15,9 @@ const ButtonLink = ({ type, name, path, icon }) => {
         sx={{
           borderRadius: '20px',
           textTransform: 'none',
-          paddingX: 3,
-          fontWeight: 600 
+          textDecoration: 'none',
+          fontWeight: 600,
+          ...addSx
         }}
       >{name}</Button>
     </Box>
